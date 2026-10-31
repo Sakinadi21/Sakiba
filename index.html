@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakiba Belal — Software Engineering Student</title>
+<meta name="description" content="Portfolio of Sakiba Belal, Software Engineering student at NSTU. Full-stack projects, simulations, and requirements work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Back to top">SB</a>
+  <nav aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cv" href="files/Sakiba_Belal_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero" id="hero">
+    <div class="hero-orb orb-1" aria-hidden="true"></div>
+    <div class="hero-orb orb-2" aria-hidden="true"></div>
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero-text">
+      <p class="status"><span class="dot"></span>Open to Software Engineering internships</p>
+      <h1>I build things —<br>websites, simulations,<br>sometimes a gift.</h1>
+      <p class="lede">Software Engineering student at NSTU . I ship full-stack
+      apps, write the specs that scope them, and lately I've been teaching
+      physics to a computer with Java Swing.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#work">View my work</a>
+        <a class="btn btn-ghost" href="mailto:sakiba2518@student.nstu.edu.bd">Email me</a>
+      </div>
+    </div>
+
+    <div class="hero-card" id="tiltCard">
+      <div class="hero-card-inner">
+        <img src="images/Sakiba.jpg" alt="Portrait of Sakiba Belal">
+        <div class="hero-card-tag">NSTU · Software Engineering</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="console-strip" aria-hidden="false">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">sakiba@nstu:~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About</h2>
+    <p>I'm a third-year Software Engineering student at Noakhali Science
+    and Technology University. Most of what I know, I learned by building
+    something — a physics simulator, an online shop for my father's
+    optics business, a website for my own institute that nobody asked
+    for. I'm currently looking for a Software Engineering internship
+    where I can do more of that, with people who'll tell me when my
+    code is wrong.</p>
+
+    <h3 class="skills-heading">Skills</h3>
+    <div class="skills" id="skills"></div>
+  </section>
+
+  <section class="work" id="work">
+    <h2>Selected work</h2>
+    <p class="section-lede">Nine things I've built — some for clients,
+    one for coursework, one for a friend's wedding.</p>
+    <div class="project-grid" id="projectGrid"></div>
+  </section>
+
+  <section class="achievements" id="achievements">
+    <h2>Recognition</h2>
+    <div class="badge-row" id="badgeRow"></div>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2>Experience &amp; education</h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's talk</h2>
+    <p class="section-lede">Open to internships, collaborations, or just
+    talking about physics simulators.</p>
+    <div class="contact-grid" id="contactGrid"></div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Sakiba Belal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
